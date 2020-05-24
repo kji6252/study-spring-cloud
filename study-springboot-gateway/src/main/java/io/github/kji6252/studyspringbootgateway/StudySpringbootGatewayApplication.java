@@ -3,6 +3,7 @@ package io.github.kji6252.studyspringbootgateway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.context.annotation.Bean;
 
 @EnableZuulProxy
 @SpringBootApplication
@@ -12,4 +13,8 @@ public class StudySpringbootGatewayApplication {
         SpringApplication.run(StudySpringbootGatewayApplication.class, args);
     }
 
+    @Bean
+    public SimpleFilter simpleFilter(){
+        return new SimpleFilter();
+    }
 }

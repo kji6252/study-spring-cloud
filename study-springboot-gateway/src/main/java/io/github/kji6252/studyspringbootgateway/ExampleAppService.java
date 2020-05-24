@@ -13,12 +13,10 @@ public class ExampleAppService {
 
     @HystrixCommand(fallbackMethod = "reliable")
     public String getMessage() {
-        return restTemplate.getForObject("http://localhost:8081/message",String.class);
+        return restTemplate.getForObject("http://example-app/message",String.class);
     }
 
     public String reliable() {
         return "Cloud Native Java (O'Reilly)";
     }
-
-
 }

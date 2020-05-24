@@ -1,0 +1,7 @@
+GET http://localhost:8761/config/example-app.properties
+
+###
+
+GET http://localhost:8080/message
+
+###

@@ -1,3 +1,6 @@
 spring:
   application:
     name: example-app
+  cloud:
+    config:
+      uri: http://localhost:8761/config

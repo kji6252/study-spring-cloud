@@ -9,4 +9,4 @@
 
 rootProject.name = 'study-spring-cloud'
 
-include 'study-springboot-eureka', 'study-springboot-discoveryclient'
+include 'study-springboot-eureka', 'study-springboot-discoveryclient', 'study-springboot-gateway'

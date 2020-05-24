@@ -9,3 +9,8 @@ GET http://localhost:8081/message
 GET http://localhost:8080/example-app/message
 
 ###
+
+# Hysyrix
+GET http://localhost:8080/message
+
+###
